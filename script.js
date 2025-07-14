@@ -94,3 +94,58 @@ window.addEventListener("load", function () {
     }, 500);
   }, remaining);
 });
+
+// For dark and light mode switch
+// Theme toggle functionality
+const themeToggle = document.getElementById("theme-toggle");
+const themeLabel = document.getElementById("theme-label");
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+// Check for saved theme preference or use system preference
+const currentTheme =
+  localStorage.getItem("theme") ||
+  (prefersDarkScheme.matches ? "dark" : "light");
+document.documentElement.setAttribute("data-theme", currentTheme);
+updateButtonState(currentTheme);
+
+// Toggle theme on button click
+themeToggle.addEventListener("click", () => {
+  const currentTheme = document.documentElement.getAttribute("data-theme");
+  const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+  document.documentElement.setAttribute("data-theme", newTheme);
+  localStorage.setItem("theme", newTheme);
+  updateButtonState(newTheme);
+});
+
+// Watch for system theme changes
+prefersDarkScheme.addEventListener("change", (e) => {
+  const newTheme = e.matches ? "dark" : "light";
+  // Only change if user hasn't set a preference
+  if (!localStorage.getItem("theme")) {
+    document.documentElement.setAttribute("data-theme", newTheme);
+    updateButtonState(newTheme);
+  }
+});
+
+function updateButtonState(theme) {
+  themeLabel.textContent = theme === "dark" ? "Dark" : "Light";
+
+  // Update logo filter for dark mode
+  const logo = document.getElementById("logo");
+  if (logo) {
+    logo.style.filter =
+      theme === "dark"
+        ? "brightness(0) invert(1)"
+        : "brightness(0) invert(0.8)";
+  }
+
+  // Update hamburger icon colors
+  const hamburgerSpans = document.querySelectorAll(".hamburger-icon span");
+  if (hamburgerSpans.length > 0) {
+    const iconColor = theme === "dark" ? "rgba(255, 255, 255, 0.9)" : "white";
+    hamburgerSpans.forEach((span) => {
+      span.style.backgroundColor = iconColor;
+    });
+  }
+}

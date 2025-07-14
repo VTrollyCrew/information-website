@@ -19,7 +19,7 @@
   </head>
   <body>
     <div id="splash-screen">
-      <img src="logo.png" class="splash-logo" alt="Logo" />
+      <img src="/images/logo.png" class="splash-logo" alt="Logo" />
       <div class="splash-loader">
         <div class="splash-loader-bar"></div>
       </div>
@@ -43,11 +43,19 @@
               <li><a href="">CONTACT</a></li>
             </ul>
           </div>
+          <div class="theme-toggle-container">
+            <button id="theme-toggle" aria-label="Toggle dark mode"></button>
+            <span class="theme-toggle-label" id="theme-label">Dark</span>
+          </div>
         </nav>
         <nav id="hamburger-nav">
           <a href="index.html"
             ><img src="/images/logo.png" alt="Sample Logo" id="logo"
           /></a>
+          <div class="theme-toggle-container">
+            <button id="theme-toggle" aria-label="Toggle dark mode"></button>
+            <span class="theme-toggle-label" id="theme-label">Dark</span>
+          </div>
           <div class="hamburger-icon" onclick="toggleMenu()">
             <span></span>
             <span></span>
@@ -163,7 +171,7 @@
 
         <div class="row">
           <div class="section-3-cols">
-            <img src="./images/pexels-stockimage-4.jpg" alt="Stock Image 4" />
+            <img src="./images/pexels-stockimage-4.jpg" alt="Stock Image 4" id="section-3-cols-image"/>
             <h3>This is a small text title</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
@@ -173,7 +181,7 @@
             </p>
           </div>
           <div class="section-3-cols">
-            <img src="./images/pexels-stockimage-5.jpg" alt="Stock Image 5" />
+            <img src="./images/pexels-stockimage-5.jpg" alt="Stock Image 5" id="section-3-cols-image"/>
             <h3>This is a small text title</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
@@ -183,7 +191,7 @@
             </p>
           </div>
           <div class="section-3-cols">
-            <img src="./images/pexels-stockimage-7.jpg" alt="Stock Image 7" />
+            <img src="./images/pexels-stockimage-7.jpg" alt="Stock Image 7" id="section-3-cols-image"/>
             <h3>This is a small text title</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
@@ -208,7 +216,7 @@
               src="./images/pexels-stockimage-profile-4.jpg"
               alt="Profile Image 1"
             />
-            <div>
+            <div class="section-4-cols-text">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quibusdam accusantium pariatur, necessitatibus expedita odio
@@ -228,7 +236,7 @@
               src="./images/pexels-stockimage-profile-2.jpg"
               alt="Profile Image 2"
             />
-            <div>
+            <div class="section-4-cols-text">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quibusdam accusantium pariatur, necessitatibus expedita odio
@@ -248,7 +256,7 @@
               src="./images/pexels-stockimage-profile-3.jpg"
               alt="Profile Image 3"
             />
-            <div>
+            <div class="section-4-cols-text">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quibusdam accusantium pariatur, necessitatibus expedita odio

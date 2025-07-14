@@ -17,83 +17,100 @@
     />
   </head>
   <body>
-    <section class="sub-header">
-      <nav id="desktop-nav">
-        <a href="index.html">
-          <img src="/images/logo.png" alt="Sample Logo" id="logo" />
-        </a>
-        <div class="nav-links" id="navLinks">
-          <ul>
-            <li><a href="./index.html">HOME</a></li>
-            <li><a href="./about.html">ABOUT</a></li>
-            <li><a href="./index.html#section-1">SECTION 1</a></li>
-            <li><a href="./index.html#section-2">SECTION 2</a></li>
-            <li><a href="./index.html#section-3">SECTION 3</a></li>
-            <li><a href="./index.html#section-4">SECTION 4</a></li>
-            <li><a href="">BLOG</a></li>
-            <li><a href="">CONTACT</a></li>
-          </ul>
-        </div>
-      </nav>
-      <nav id="hamburger-nav">
-        <a href="index.html"
-          ><img src="/images/logo.png" alt="Sample Logo" id="logo"
-        /></a>
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-overlay" onclick="toggleMenu()"></div>
-        <div class="hamburger-menu" onclick="toggleMenu()">
-          <div class="menu-links">
-            <li><a href="./index.html">HOME</a></li>
-            <li><a href="./about.html">ABOUT</a></li>
-            <li><a href="./index.html#section-1">SECTION 1</a></li>
-            <li><a href="./index.html#section-2">SECTION 2</a></li>
-            <li><a href="./index.html#section-3">SECTION 3</a></li>
-            <li><a href="./index.html#section-4">SECTION 4</a></li>
-            <li><a href="">BLOG</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+    <div id="splash-screen">
+      <img src="/images/logo.png" class="splash-logo" alt="Logo" />
+      <div class="splash-loader">
+        <div class="splash-loader-bar"></div>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <section class="sub-header">
+        <nav id="desktop-nav">
+          <a href="index.html">
+            <img src="/images/logo.png" alt="Sample Logo" id="logo" />
+          </a>
+          <div class="nav-links" id="navLinks">
+            <ul>
+              <li><a href="./index.html">HOME</a></li>
+              <li><a href="./about.html">ABOUT</a></li>
+              <li><a href="./index.html#section-1">SECTION 1</a></li>
+              <li><a href="./index.html#section-2">SECTION 2</a></li>
+              <li><a href="./index.html#section-3">SECTION 3</a></li>
+              <li><a href="./index.html#section-4">SECTION 4</a></li>
+              <li><a href="">BLOG</a></li>
+              <li><a href="">CONTACT</a></li>
+            </ul>
+          </div>
+          <div class="theme-toggle-container">
+            <button id="theme-toggle" aria-label="Toggle dark mode"></button>
+            <span class="theme-toggle-label" id="theme-label">Dark</span>
+          </div>
+        </nav>
+        <nav id="hamburger-nav">
+          <a href="index.html"
+            ><img src="/images/logo.png" alt="Sample Logo" id="logo"
+          /></a>
+          <div class="theme-toggle-container">
+            <button id="theme-toggle" aria-label="Toggle dark mode"></button>
+            <span class="theme-toggle-label" id="theme-label">Dark</span>
+          </div>
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-overlay" onclick="toggleMenu()"></div>
+          <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="menu-links">
+              <li><a href="./index.html">HOME</a></li>
+              <li><a href="./about.html">ABOUT</a></li>
+              <li><a href="./index.html#section-1">SECTION 1</a></li>
+              <li><a href="./index.html#section-2">SECTION 2</a></li>
+              <li><a href="./index.html#section-3">SECTION 3</a></li>
+              <li><a href="./index.html#section-4">SECTION 4</a></li>
+              <li><a href="">BLOG</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </div>
+          </div>
+        </nav>
+        <h1>This is the about us page</h1>
+      </section>
+      <section class="about-us">
+        <div class="row">
+          <div class="about-col">
+            <h1>This is the heading section for about content</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              suscipit pariatur libero unde asperiores sequi sit nam omnis
+              repudiandae ea harum, at dicta ex voluptatem dolore placeat porro.
+              Explicabo, tenetur!
+            </p>
+            <a href="" class="hero-btn">EXPLORE NOW</a>
+          </div>
+          <div class="about-col">
+            <img src="./images/pexels-stockimage-9.jpg" alt="">
           </div>
         </div>
-      </nav>
-      <h1>This is the about us page</h1>
-    </section>
-    <section class="about-us">
-      <div class="row">
-        <div class="about-col">
-          <h1>This is the heading section for about content</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-            suscipit pariatur libero unde asperiores sequi sit nam omnis
-            repudiandae ea harum, at dicta ex voluptatem dolore placeat porro.
-            Explicabo, tenetur!
-          </p>
-          <a href="" class="hero-btn">EXPLORE NOW</a>
+      </section>
+      <section class="footer">
+        <h4>About Us</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore velit
+          voluptatum ipsa quo iste iusto consectetur, labore soluta
+          <br />temporibus dolorem mollitia quos. Possimus reprehenderit velit
+          ipsum saepe, voluptas cum temporibus!
+        </p>
+        <div class="icons">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+          <i class="fa fa-github" aria-hidden="true"></i>
         </div>
-        <div class="about-col">
-          <img src="./images/pexels-stockimage-9.jpg" alt="">
-        </div>
-      </div>
-    </section>
-    <section class="footer">
-      <h4>About Us</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore velit
-        voluptatum ipsa quo iste iusto consectetur, labore soluta
-        <br />temporibus dolorem mollitia quos. Possimus reprehenderit velit
-        ipsum saepe, voluptas cum temporibus!
-      </p>
-      <div class="icons">
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
-        <i class="fa fa-github" aria-hidden="true"></i>
-      </div>
-      <p>Made with <i class="fa fa-heart-o"></i> by Pasindu</p>
-    </section>
+        <p>Made with <i class="fa fa-heart-o"></i> by Pasindu</p>
+      </section>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
