@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Website | Draft View</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  </head>
+  <body>
+    <div id="splash-screen">
+      <img src="logo.png" class="splash-logo" alt="Logo" />
+      <div class="splash-loader">
+        <div class="splash-loader-bar"></div>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <section class="header">
+        <nav id="desktop-nav">
+          <a href="index.html">
+            <img src="/images/logo.png" alt="Sample Logo" id="logo" />
+          </a>
+          <div class="nav-links" id="navLinks">
+            <ul>
+              <li><a href="./index.html">HOME</a></li>
+              <li><a href="./about.html">ABOUT</a></li>
+              <li><a href="./index.html#section-1">SECTION 1</a></li>
+              <li><a href="./index.html#section-2">SECTION 2</a></li>
+              <li><a href="./index.html#section-3">SECTION 3</a></li>
+              <li><a href="./index.html#section-4">SECTION 4</a></li>
+              <li><a href="">BLOG</a></li>
+              <li><a href="">CONTACT</a></li>
+            </ul>
+          </div>
+        </nav>
+        <nav id="hamburger-nav">
+          <a href="index.html"
+            ><img src="/images/logo.png" alt="Sample Logo" id="logo"
+          /></a>
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-overlay" onclick="toggleMenu()"></div>
+          <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="menu-links">
+              <li><a href="./index.html">HOME</a></li>
+              <li><a href="./about.html">ABOUT</a></li>
+              <li><a href="./index.html#section-1">SECTION 1</a></li>
+              <li><a href="./index.html#section-2">SECTION 2</a></li>
+              <li><a href="./index.html#section-3">SECTION 3</a></li>
+              <li><a href="./index.html#section-4">SECTION 4</a></li>
+              <li><a href="">BLOG</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </div>
+          </div>
+        </nav>
+        <div class="text-box">
+          <h1>This is a sample website</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad vel
+            nemo mollitia, dolor debitis minus quam expedita inventore <br />
+            delectus asperiores assumenda labore quo laboriosam facere omnis
+            molestiae in repellat! Cumque.
+          </p>
+          <a href="" class="hero-btn">Click Here To See More</a>
+        </div>
+      </section>
+
+      <!-- This is a sample section -->
+      <!-- For demonstration, this is named as section 1 -->
+      <section class="section-1" id="section-1">
+        <h1>This is how the header section will look like</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+          commodi ratione eaque rem nemo? Aspernatur accusamus doloribus,
+          incidunt facilis, hic sint, modi ipsam odio reiciendis ea illum!
+          Pariatur, vel amet?
+        </p>
+
+        <div class="row">
+          <div class="section-1-col">
+            <h3>Column 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Molestias omnis debitis voluptates laboriosam laudantium animi
+              enim neque perferendis nisi itaque explicabo, voluptatem, adipisci
+              hic eius, provident beatae ut voluptatum quos.
+            </p>
+          </div>
+          <div class="section-1-col">
+            <h3>Column 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Molestias omnis debitis voluptates laboriosam laudantium animi
+              enim neque perferendis nisi itaque explicabo, voluptatem, adipisci
+              hic eius, provident beatae ut voluptatum quos.
+            </p>
+          </div>
+          <div class="section-1-col">
+            <h3>Column 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Molestias omnis debitis voluptates laboriosam laudantium animi
+              enim neque perferendis nisi itaque explicabo, voluptatem, adipisci
+              hic eius, provident beatae ut voluptatum quos.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- For demonstration, this is named as section 2 -->
+      <section class="section-2" id="section-2">
+        <h1>This is section 2</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          at quae nihil nobis omnis voluptates illo facilis veritatis culpa!
+          Ipsam architecto provident at consequuntur atque, sint ex magnam
+          molestiae perferendis?
+        </p>
+
+        <div class="row">
+          <div class="section-2-image-cols">
+            <img src="./images/pexels-stockimage-1.jpg" alt="Stock Image 1" />
+            <div class="layer">
+              <h3>Stock Image 1</h3>
+            </div>
+          </div>
+          <div class="section-2-image-cols">
+            <img src="./images/pexels-stockimage-2.jpg" alt="Stock Image 2" />
+            <div class="layer">
+              <h3>Stock Image 2</h3>
+            </div>
+          </div>
+          <div class="section-2-image-cols">
+            <img src="./images/pexels-stockimage-3.jpg" alt="Stock Image 3" />
+            <div class="layer">
+              <h3>Stock Image 3</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-3" id="section-3">
+        <h1>This is section 3</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          soluta, quo, et nisi nulla nihil similique quos voluptatem neque, aut
+          repellat adipisci ex. Voluptatum aut mollitia iusto assumenda ad?
+          Perferendis.
+        </p>
+
+        <div class="row">
+          <div class="section-3-cols">
+            <img src="./images/pexels-stockimage-4.jpg" alt="Stock Image 4" />
+            <h3>This is a small text title</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
+              ipsum nisi culpa, unde explicabo cupiditate laborum et quaerat nam
+              vitae, provident deleniti officia laudantium quibusdam ut
+              aspernatur laboriosam aliquam velit.
+            </p>
+          </div>
+          <div class="section-3-cols">
+            <img src="./images/pexels-stockimage-5.jpg" alt="Stock Image 5" />
+            <h3>This is a small text title</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
+              ipsum nisi culpa, unde explicabo cupiditate laborum et quaerat nam
+              vitae, provident deleniti officia laudantium quibusdam ut
+              aspernatur laboriosam aliquam velit.
+            </p>
+          </div>
+          <div class="section-3-cols">
+            <img src="./images/pexels-stockimage-7.jpg" alt="Stock Image 7" />
+            <h3>This is a small text title</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
+              ipsum nisi culpa, unde explicabo cupiditate laborum et quaerat nam
+              vitae, provident deleniti officia laudantium quibusdam ut
+              aspernatur laboriosam aliquam velit.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-4" id="section-4">
+        <h1>This is section 4</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, rem at
+          adipisci, sed iste quibusdam fugit, eum autem dolorem quisquam nam aut
+          accusamus! Beatae labore tempore quaerat temporibus, officia corrupti.
+        </p>
+
+        <div class="row">
+          <div class="section-4-cols">
+            <img
+              src="./images/pexels-stockimage-profile-4.jpg"
+              alt="Profile Image 1"
+            />
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam accusantium pariatur, necessitatibus expedita odio
+                nulla ipsa eligendi facilis mollitia in quaerat incidunt,
+                molestias quam saepe suscipit animi esse fugit iusto!
+              </p>
+              <h3>Profile Character 1</h3>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+          <div class="section-4-cols">
+            <img
+              src="./images/pexels-stockimage-profile-2.jpg"
+              alt="Profile Image 2"
+            />
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam accusantium pariatur, necessitatibus expedita odio
+                nulla ipsa eligendi facilis mollitia in quaerat incidunt,
+                molestias quam saepe suscipit animi esse fugit iusto!
+              </p>
+              <h3>Profile Character 2</h3>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+          </div>
+          <div class="section-4-cols">
+            <img
+              src="./images/pexels-stockimage-profile-3.jpg"
+              alt="Profile Image 3"
+            />
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam accusantium pariatur, necessitatibus expedita odio
+                nulla ipsa eligendi facilis mollitia in quaerat incidunt,
+                molestias quam saepe suscipit animi esse fugit iusto!
+              </p>
+              <h3>Profile Character 3</h3>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h1>This is a contact us section</h1>
+        <a href="" class="hero-btn">CONTACT US</a>
+      </section>
+      <section class="footer">
+        <h4>About Us</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
+          velit voluptatum ipsa quo iste iusto consectetur, labore soluta
+          <br />temporibus dolorem mollitia quos. Possimus reprehenderit velit
+          ipsum saepe, voluptas cum temporibus!
+        </p>
+        <div class="icons">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Pasindu</p>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Website | Draft View</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav id="desktop-nav">
+        <a href="index.html">
+          <img src="/images/logo.png" alt="Sample Logo" id="logo" />
+        </a>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./index.html#section-1">SECTION 1</a></li>
+            <li><a href="./index.html#section-2">SECTION 2</a></li>
+            <li><a href="./index.html#section-3">SECTION 3</a></li>
+            <li><a href="./index.html#section-4">SECTION 4</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <a href="index.html"
+          ><img src="/images/logo.png" alt="Sample Logo" id="logo"
+        /></a>
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-overlay" onclick="toggleMenu()"></div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          <div class="menu-links">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./index.html#section-1">SECTION 1</a></li>
+            <li><a href="./index.html#section-2">SECTION 2</a></li>
+            <li><a href="./index.html#section-3">SECTION 3</a></li>
+            <li><a href="./index.html#section-4">SECTION 4</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </div>
+        </div>
+      </nav>
+      <h1>This is the about us page</h1>
+    </section>
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>This is the heading section for about content</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            suscipit pariatur libero unde asperiores sequi sit nam omnis
+            repudiandae ea harum, at dicta ex voluptatem dolore placeat porro.
+            Explicabo, tenetur!
+          </p>
+          <a href="" class="hero-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+          <img src="./images/pexels-stockimage-9.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore velit
+        voluptatum ipsa quo iste iusto consectetur, labore soluta
+        <br />temporibus dolorem mollitia quos. Possimus reprehenderit velit
+        ipsum saepe, voluptas cum temporibus!
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by Pasindu</p>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
